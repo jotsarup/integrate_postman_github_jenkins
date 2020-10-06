@@ -1,0 +1,46 @@
+{
+  "info": {
+    "_postman_id": "24a89286-159b-47f2-b1f4-641e5a8ebd12",
+    "name": "Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Dummy",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "754aa2be-6358-4b04-8bd6-bf91a096e060",
+            "exec": [
+              "console.log(\"Dummy request\")"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "abe480d5-324b-41f4-848c-b76cb1fb8f4f",
+            "exec": [
+              "pm.test('Dummy test Success!', function(){",
+              "    pm.response.to.have.status(200)",
+              "})"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "f546d1a8-a6f1-4e16-80a9-9d8543b5d6da",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}/todos/1"
+      },
+      "response": []
+    }
+  ]
+}
