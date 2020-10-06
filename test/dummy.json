@@ -38,7 +38,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": "{{base_url}}/todos/1"
+        "url": "https://jsonplaceholder.typicode.com/todos/1"
       },
       "response": []
     }
