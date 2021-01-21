@@ -24,7 +24,7 @@
             "id": "abe480d5-324b-41f4-848c-b76cb1fb8f4f",
             "exec": [
               "pm.test('Dummy test Success!', function(){",
-              "    pm.response.to.have.status(200)",
+              "    pm.response.to.have.status(201)",
               "})"
             ],
             "type": "text/javascript"
